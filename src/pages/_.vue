@@ -4,12 +4,16 @@
 
 	import PagesGeneral from '@/components/views/PagesGeneral';
 	import PagesCollection from '@/components/views/PagesCollection';
+	import FourOhFourViewComponent from '@/components/views/404ViewComponent';
 	import EntriesPages from '@/queries/EntriesPages.gql';
+	
+	
 
 	export default {
 		components: {
 			PagesGeneral,
-			PagesCollection
+			PagesCollection,
+			FourOhFourViewComponent
 		},
 		async asyncData({ $api, route }) {
 			// Check for Craft Live Preview params
@@ -58,6 +62,7 @@
 
 <template>
 	<div>
-		<component v-if="entry" :is="pageViewComponent" :entry="entry" />
+		<component :is="pageViewComponent" v-if="entry" :entry="entry" />
+		<FourOhFourViewComponent v-else  />
 	</div>
 </template>

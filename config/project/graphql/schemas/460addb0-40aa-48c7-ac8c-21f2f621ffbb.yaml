@@ -5,6 +5,8 @@ scope:
   - 'elements.drafts:read'
   - 'elements.revisions:read'
   - 'elements.inactive:read'
+  - 'sections.f25c8355-39cc-443c-87cf-f23bf383449f:read' # 404
+  - 'entrytypes.e179cb8a-ec61-458c-8ce4-38e475d80e37:read' # 404
   - 'sections.9685ed87-31a4-435c-9f18-ba478320023a:read' # Home
   - 'entrytypes.d3951874-9e5b-4586-979e-c7e9c5b08d92:read' # Home
   - 'sections.3f16d68f-cda8-49f7-8564-ba9db1855669:read' # Pages
